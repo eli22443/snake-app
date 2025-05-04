@@ -60,13 +60,26 @@ function App() {
   };
 
   const handleKeyDown = async (event) => {
-    if (event.key === "d" && snakeDirect.x != -1 && snakeDirect.x != 1)
+    console.log(event.key);
+    if (event.key === "ArrowRight" && snakeDirect.x != -1 && snakeDirect.x != 1)
       setSnakeDirect({ x: 1, y: 0 });
-    else if (event.key === "s" && snakeDirect.y != -1 && snakeDirect.y != 1)
+    else if (
+      event.key === "ArrowDown" &&
+      snakeDirect.y != -1 &&
+      snakeDirect.y != 1
+    )
       setSnakeDirect({ x: 0, y: 1 });
-    else if (event.key === "a" && snakeDirect.x != 1 && snakeDirect.x != -1)
+    else if (
+      event.key === "ArrowLeft" &&
+      snakeDirect.x != 1 &&
+      snakeDirect.x != -1
+    )
       setSnakeDirect({ x: -1, y: 0 });
-    else if (event.key === "w" && snakeDirect.y != 1 && snakeDirect.y != -1)
+    else if (
+      event.key === "ArrowUp" &&
+      snakeDirect.y != 1 &&
+      snakeDirect.y != -1
+    )
       setSnakeDirect({ x: 0, y: -1 });
   };
 
