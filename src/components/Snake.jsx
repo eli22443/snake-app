@@ -16,8 +16,11 @@ function Snake({ coordinates, direction }) {
 
     if (index == 0) {
       // enlarge head by 50%
-      // style.width = "24px";
-      // style.height = "24px";
+      style.width = "16px";
+      style.height = "24px";
+      style.left = `${coordinate.x * 21.7 + 17.5}px`;
+      style.top = `${coordinate.y * 21.7 + 14.5}px`;
+
       if (direction.x == 1) style.transform = `rotate(270deg)`;
       if (direction.x == -1) style.transform = `rotate(90deg)`;
       if (direction.y == 1) style.transform = `rotate(0deg)`;
