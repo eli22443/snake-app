@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  position: fixed;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr); /* 3 columns */
+  margin: auto; /* centers the grid */
+}
+
+.grid-item {
+  background-color: lightgreen; /* background color for items */
+  border: 1px solid #1cec29; /* border for items */
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
