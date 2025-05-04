@@ -28,8 +28,9 @@ function Board({ children }) {
   // );
 
   return (
-    <div>
+    <div className="board-container">
       <div className="grid-container">{grid}</div>
+      {children}
     </div>
   );
 }

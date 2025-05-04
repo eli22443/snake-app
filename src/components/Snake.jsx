@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { FaRegCircle } from "react-icons/fa6";
-import { GiSnakeBite } from "react-icons/gi";
+import { FaSquare } from "react-icons/fa";
+import snakeFace from "../assets/snake_face.png";
 
 function Snake({ coordinates, direction }) {
   const renderedSnake = coordinates.map((coordinate, index) => {
     const style = {
       position: "absolute",
-      left: `${coordinate.x * 21.7 + 1.5}px`,
-      top: `${coordinate.y * 21.7 + 1.5}px`,
+      left: `${coordinate.x * 21.7 + 17.5}px`,
+      top: `${coordinate.y * 21.7 + 17.5}px`,
       width: "16px",
       height: "16px",
       // display: "flex",
@@ -15,20 +15,19 @@ function Snake({ coordinates, direction }) {
     };
 
     if (index == 0) {
+      // enlarge head by 50%
+      // style.width = "24px";
+      // style.height = "24px";
       if (direction.x == 1) style.transform = `rotate(270deg)`;
       if (direction.x == -1) style.transform = `rotate(90deg)`;
       if (direction.y == 1) style.transform = `rotate(0deg)`;
       if (direction.y == -1) style.transform = `rotate(180deg)`;
-      return (
-        <div key={index} style={style}>
-          {<GiSnakeBite />}
-        </div>
-      );
+      return <img key={index} src={snakeFace} alt="snake head" style={style} />;
     }
 
     return (
       <div key={index} style={style}>
-        {<FaRegCircle />}
+        {<FaSquare />}
       </div>
     );
   });

@@ -13,8 +13,8 @@ function Food({ coordinates, type }) {
   const renderedFood = coordinates.map((coordinate, index) => {
     const style = {
       position: "absolute",
-      left: `${coordinate.x * 21.7 + 1.5}px`,
-      top: `${coordinate.y * 21.7 + 1.5}px`,
+      left: `${coordinate.x * 21.7 + 16.5}px`,
+      top: `${coordinate.y * 21.7 + 16.5}px`,
       width: "20px",
       height: "20px",
       // backgroundColor: "red",

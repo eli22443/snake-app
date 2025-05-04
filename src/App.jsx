@@ -60,7 +60,6 @@ function App() {
   };
 
   const handleKeyDown = async (event) => {
-    console.log(event.key);
     if (event.key === "ArrowRight" && snakeDirect.x != -1 && snakeDirect.x != 1)
       setSnakeDirect({ x: 1, y: 0 });
     else if (
@@ -121,11 +120,10 @@ function App() {
   }, [snakeDirect, gameRunning]);
 
   return (
-    <div style={{ position: "relative" }}>
-      <Board />
+    <Board>
       <Food coordinates={foodPos} type={"apple"} />
       <Snake coordinates={snakePos} direction={snakeDirect} />
-    </div>
+    </Board>
   );
 }
 
