@@ -1,12 +1,49 @@
-# React + Vite
+# Snake Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern implementation of the classic Snake game built with React and Vite. Control the snake to eat food and grow longer while avoiding collisions with walls and yourself!
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Smooth snake movement and controls
+- Score tracking
+- Game over detection
+- Responsive design
+- Modern UI with React Icons
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- React Icons
+- ESLint for code quality
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## How to Play
+
+- Use arrow keys to control the snake's direction
+- Eat the food to grow longer
+- Avoid hitting the walls or yourself
+- Try to achieve the highest score possible!
+
+## Development
+
+This project uses ESLint for code quality and consistency. The configuration is set up to work with React and modern JavaScript features.
