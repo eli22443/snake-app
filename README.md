@@ -1,6 +1,6 @@
 # Snake Game
 
-A modern implementation of the classic Snake game built with React and Vite. Control the snake to eat food and grow longer while avoiding collisions with walls and yourself!
+A modern implementation of the classic Snake game i've made built with React and Vite. Control the snake to eat food and grow longer while avoiding collisions with walls and yourself! :)
 
 ## Features
 
